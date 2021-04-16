@@ -1,0 +1,21 @@
+{
+  "name": "usb-display-switch",
+  "version": "1.0.0",
+  "description": "Use DDC/CI and USB monitoring to switch displays",
+  "main": "index.js",
+  "scripts": {
+    "devstart": "nodemon --ignore *.json ./index.js"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "*.json"
+    ]
+  },
+  "author": "Elfinslayer",
+  "license": "ISC",
+  "dependencies": {
+    "@hensm/ddcci": "github:Elfinslayer/node-ddcci",
+    "nodemon": "^2.0.4",
+    "usb-detection": "^4.10.0"
+  }
+}
